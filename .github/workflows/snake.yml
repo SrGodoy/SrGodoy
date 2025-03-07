@@ -29,6 +29,15 @@ jobs:
         run: |
           mv dist/snake.svg .
 
+      - name: Create output branch if it doesn't exist
+        run: |
+          git checkout --orphan output
+          git reset --hard
+          git commit --allow-empty -m "Initial commit on output branch"
+          git push origin output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit and push snake.svg to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
