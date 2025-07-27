@@ -59,13 +59,6 @@
 <div align="left">
 </div>
 
-###
-
-<div align="center">
-  <img src="https://profile-counter.glitch.me/SrGodoy/count.svg?"  />
-</div>
-
-###
 
 ![Snake animation](https://raw.githubusercontent.com/SrGodoy/SrGodoy/output/snake.svg)
 
